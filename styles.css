@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.text {
+    width: 70%; /* Set the width to 70% of the screen */
+    margin: 0 auto; /* Center the text horizontally */
+    padding: 3rem; /* Add padding to prevent text from touching the edges */
+    background-color: #ffffff; /* Optional: Add a background color */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 0.5rem 1rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 1rem;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-list a:hover {
+    color: #ff9800;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        text-align: center;
+        margin: 1rem 0;
+    }
+}
+
+.profile-pic-container {
+    max-width: 300px;
+     margin: 0 auto;
+}
+footer {
+    background-color: #f0f0f0;
+    text-align: right;
+    /* margin: 20px;
+    padding: 10px; */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    box-sizing: border-box;
+}

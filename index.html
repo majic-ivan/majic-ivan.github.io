@@ -7,65 +7,37 @@
     <title>Ivan Majic website</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website WORK IN PROGRESS</h1>
-        <h2>PhD Student in Applied Mathematics at UCL</h2>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#teaching">Teaching</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <nav class="navbar">
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="montenegro.html">Montenegro Travel Advice</a></li>
         </ul>
     </nav>
 
-    <section id="about">
-        <h3>About Me</h3>
-        <p>[I am from Montenegro.]</p>
-        <h4>Research Interests</h4>
-        <p>[Your research interests]</p>
-    </section>
-
-    <section id="research">
-        <h3>Research</h3>
-        <h4>Current Projects</h4>
-        <p>[Description of current research projects]</p>
-        <h4>Publications</h4>
-        <ul>
-            <li>[Publication 1]</li>
-            <li>[Publication 2]</li>
-            <li>[Publication 3]</li>
-        </ul>
-    </section>
-
-    <section id="teaching">
-        <h3>Teaching</h3>
-        <p>[Courses taught and teaching philosophy]</p>
-    </section>
-
-    <section id="blog">
-        <h3>Blog</h3>
-        <p>[Latest updates and articles]</p>
-    </section>
-
-    <section id="contact">
-        <h3>Contact</h3>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>© [Your Name] | [Year]</p>
+    <header>
+        <h1>Ivan Majić</h1>
+        <h2>PhD Student in Applied Mathematics at UCL</h2>
+    </header>
+    <main class="content">
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="profile-pic-container">
+            <img src="profile_pic_website.jpg" alt="Picture of Ivan Majić" style="width: 100%; height: auto;">
+        </div>
+    </main>
+    <footer style="background-color: #f0f0f0; text-align: right; padding: 15px;">
+        <p style="margin: 0;">© Ivan Majić | 2025</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
