@@ -11,7 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
+                entry.target.classList.add('visible'); // Fade in when in view
+            } else {
+                entry.target.classList.remove('visible'); // Fade out when out of view
             }
         });
     });
