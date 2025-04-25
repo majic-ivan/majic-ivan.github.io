@@ -91,11 +91,21 @@ header {
 footer {
     background-color: #f0f0f0;
     text-align: right;
-    /* margin: 20px;
-    padding: 10px; */
-    position: fixed;
+    padding: 10px;
+    position: absolute;
     bottom: 0;
     width: 100%;
     border-radius: 10px 10px 0 0;
     box-sizing: border-box;
+}
+/* Add animation for smooth appearance */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
