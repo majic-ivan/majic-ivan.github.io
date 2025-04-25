@@ -90,14 +90,13 @@ header {
 }
 footer {
     background-color: #f0f0f0;
-    text-align: right;
+    text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     border-radius: 10px 10px 0 0;
     box-sizing: border-box;
-    z-index: 1000; /* Ensure it stays above other content */
+    margin-top: 2rem; /* Add spacing above the footer */
+    position: relative; /* Ensure it stays below content */
 }
 /* Add animation for smooth appearance */
 .fade-in {
