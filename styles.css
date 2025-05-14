@@ -2,11 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-size: 18px
 }
 .text {
     width: 70%; /* Set the width to 70% of the screen */
-    margin: 0 auto; /* Center the text horizontally */
-    padding: 3rem; /* Add padding to prevent text from touching the edges */
+    margin: 1rem auto; /* Reduce vertical margin to 1rem and center horizontally */
+    padding: 0.5rem; /* Add padding to prevent text from touching the edges */
     background-color: #ffffff; /* Optional: Add a background color */
     border-radius: 8px; /* Optional: Add rounded corners */
     box-sizing: border-box; /* Ensure padding is included in the width */
