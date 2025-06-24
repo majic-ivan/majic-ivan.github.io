@@ -20,3 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     fadeInElements.forEach((el) => observer.observe(el));
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const user = "ivan.majic";
+    const domain = "ucl.ac.uk";
+    const email = user + "@" + domain;
+    const emailLink = '<a href="mailto:' + email + '">' + email + '</a>';
+    const emailElem = document.getElementById("email");
+    if (emailElem) emailElem.innerHTML = emailLink;
+});
