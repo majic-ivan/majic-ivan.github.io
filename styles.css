@@ -110,3 +110,18 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+.photo-gallery figure {
+    margin: 0;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.75rem 0;
+}
+
+.photo-gallery figcaption {
+    margin-bottom: 1rem;
+}
