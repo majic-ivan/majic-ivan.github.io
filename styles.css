@@ -152,7 +152,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .photo-gallery .food-photos-title {
@@ -160,11 +160,21 @@ footer {
 }
 
 .photo-gallery .food-photo {
-    flex: 1 1 260px;
+    flex: 0 0 auto;
+    margin: 0;
+    max-width: 220px;
 }
 
 .photo-gallery .food-photo img {
+    width: 220px;
+    max-width: 100%;
+    height: auto;
     margin: 0;
+}
+
+.photo-gallery .food-photo figcaption {
+    margin: 0.35rem 0 0;
+    font-size: 0.9em;
 }
 
 .preserve-lines {
