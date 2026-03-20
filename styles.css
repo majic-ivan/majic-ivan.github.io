@@ -4,6 +4,104 @@ body {
     padding: 0;
     font-size: 18px
 }
+
+.home-layout {
+    width: min(1100px, 100%);
+    margin: 0 auto;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+
+.home-sidebar {
+    flex: 0 0 320px;
+    max-width: 360px;
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    padding: 1rem;
+    box-sizing: border-box;
+    align-self: flex-start;
+}
+
+.home-sidebar .profile-pic-container {
+    max-width: none;
+    margin: 0;
+}
+
+.home-sidebar img {
+    border-radius: 10px;
+}
+
+.home-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.home-sidebar .download-button,
+.home-sidebar .linkedin-button {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.home-email {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.home-email p {
+    margin: 0 0 0.5rem;
+}
+
+.home-email #email a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.home-email #email a:hover {
+    color: #ff9800;
+}
+
+.home-main {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.home-main .text {
+    width: 100%;
+    margin: 0 0 1rem 0;
+}
+
+.download-button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.75rem 1.1rem;
+    border-radius: 8px;
+    background-color: #333;
+    border: 2px solid #333;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.download-button:hover {
+    background-color: #ff9800;
+    border-color: #ff9800;
+    color: #333;
+    transform: translateY(-1px);
+}
+
+.download-button:focus-visible {
+    outline: 3px solid #ff9800;
+    outline-offset: 3px;
+}
 .text {
     width: 70%; /* Set the width to 70% of the screen */
     margin: 1rem auto; /* Reduce vertical margin to 1rem and center horizontally */
@@ -82,6 +180,27 @@ header {
     .nav-list li {
         text-align: center;
         margin: 1rem 0;
+    }
+
+    .text {
+        width: 92%;
+    }
+
+    .home-layout {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .home-sidebar {
+        width: 92%;
+        max-width: none;
+        margin: 1rem auto 0;
+    }
+
+    .home-main {
+        width: 92%;
+        margin: 0 auto;
     }
 }
 
@@ -180,4 +299,30 @@ footer {
 .preserve-lines {
     white-space: pre-line;
     line-height: 1.5;
+}
+
+.linkedin-button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.75rem 1.1rem;
+    border-radius: 8px;
+    background-color: #333;
+    border: 2px solid #333;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.linkedin-button:hover {
+    background-color: #ff9800;
+    border-color: #ff9800;
+    color: #333;
+    transform: translateY(-1px);
+}
+
+.linkedin-button:focus-visible {
+    outline: 3px solid #ff9800;
+    outline-offset: 3px;
 }
