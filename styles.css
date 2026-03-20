@@ -125,3 +125,8 @@ footer {
 .photo-gallery figcaption {
     margin-bottom: 1rem;
 }
+
+.preserve-lines {
+    white-space: pre-line;
+    line-height: 1.5;
+}
